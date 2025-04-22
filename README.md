@@ -142,4 +142,3 @@ The demo includes:
 ## 👤 Author
 
 **Vala Divyarajsinh**  
-[GitHub](https://github.com/YOUR_USERNAME) • [Email](mailto:your.email@example.com)
