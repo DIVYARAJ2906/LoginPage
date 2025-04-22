@@ -1,54 +1,101 @@
-# React + TypeScript + Vite
+Here's the `README.md` file specifically for the **frontend** folder of your full-stack intern assignment:
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+```md
+# 🧩 Frontend – Full-Stack Intern Assignment
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This is the **frontend** of the Full-Stack Intern Assignment, built with **React 19**, **TypeScript**, and **Vite**. It converts the provided Figma design into a fully functional, responsive UI. It includes form validation, type-safe API communication, and modern state/data management.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## ⚙️ Tech Stack
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+- ⚛️ **React 19** with Vite
+- 🔠 **TypeScript**
+- ✅ **Zod** – schema validation
+- 📝 **React Hook Form** – form management
+- 🔁 **React Query** – data fetching & caching
+- 🎨 **Tailwind CSS** (if applicable)
+
+---
+
+## 🗂️ Project Structure
+
+```plaintext
+src/
+├── components/      # Reusable, modular UI components
+├── hooks/           # Custom hooks for business logic
+├── api/             # API interaction logic (React Query)
+├── schemas/         # Zod validation schemas
+├── types/           # TypeScript types and interfaces
+├── pages/           # Main page components
+└── main.tsx         # App entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 💡 Features
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+- ✅ Fully implemented **Figma UI design**
+- 🔐 Form validation using **Zod + React Hook Form**
+- 🔄 Data management via **React Query**
+- 🧠 Clean separation of **UI**, **logic**, and **API**
+- 🧾 **Type-safe** code throughout using interfaces and types
+- ❌ Friendly **error messages** for validation and API failures
+
+---
+
+## 🚀 Getting Started
+
+### 1. Install Dependencies
+
+```bash
+cd client
+npm install
 ```
+
+### 2. Start Development Server
+
+```bash
+npm run dev
+```
+
+App will be available on [http://localhost:5173](http://localhost:5173) by default.
+
+---
+
+## 🔍 Testing Features
+
+- Register and login using the UI
+- Try submitting invalid inputs to test form validation
+- Inspect React Query devtools (if installed) and browser console for API communication
+- Check how the UI handles different error cases
+
+---
+
+## 📁 Environment Variables
+
+If needed, create a `.env` file in the root of `client/` with:
+
+```env
+VITE_API_BASE_URL=http://localhost:3000/api
+```
+
+Make sure it matches the backend port.
+
+---
+
+## 📌 Requirements Covered
+
+✅ Figma design converted to components  
+✅ Validation with Zod + React Hook Form  
+✅ React Query for API communication  
+✅ Type-safe data handling  
+✅ Full error handling  
+
+---
+
+## 👤 Author
+
+**Vala Divyarajsinh**  
